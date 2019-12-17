@@ -36,9 +36,8 @@ def main():
             mem_cp[2] = verb
             run_program(mem_cp)
             if(mem_cp[0] == 19690720):
-                print(f"noun={noun} verb=verb{verb} The answer is: ", noun * 100 + verb)
+                print(f"noun={noun} verb={verb} The answer is: ", noun * 100 + verb)
                 quit(0)
-
 
     temp = int(input("First Value: "))
     main_mem[1] = temp
