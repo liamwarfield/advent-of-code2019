@@ -16,6 +16,7 @@ for i in tqdm(range(min, max)):
         if digit > last_digit:
             digit_check = False
             break
+        # Extrodinarly ugly code the creates a 5 wide sliding window
         if (digit == last_digit and digit != next_digit and digit != last_last_digit) or (digit == next_digit and digit != last_digit and digit != next_next_digit):
             double = True
         last_last_digit = last_digit
